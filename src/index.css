@@ -97,6 +97,23 @@
   color: black;
 }
 
+
+#addbtn{
+  color: white;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* Main Content Area */
 .content {  
   width: 85%;
@@ -328,4 +345,108 @@
   
   margin-right: 10px;
 
+}
+
+
+/*-------------Modal-----------------*/
+
+.modalContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(249 250 251);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  width: 50%;
+  max-width: 700px;
+  /* text-align: center; */
+}
+.modelHeader{
+  display: flex;
+  justify-content: space-between;
+}
+.modalResourceType{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: masonry;
+
+  
+  .modalResourceOption {
+    margin: 5px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+} 
+  .modalResourceOption.active {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+  }
+  .Modalicon{
+   
+    font-size: 30px;
+    
+    margin-bottom: -10px;
+  }
+  .modalInput{
+    width: 90%;
+    padding: 13px;
+    border: none;
+    border-radius:10px;
+    outline:none
+  }
+.modalResourceUrlBody{
+  margin: 30px 0px;
+  width: 100%;
+  box-shadow: rgba(0, 0, 15, 0.1) 0px 3px 5px 0px;
+}
+.categoryBody{
+  margin: 30px 0px;
+  display: flex;
+}
+.modalSelect{
+  padding: 15px;
+  border: none;
+}
+.categoryOne{
+  width: 30%;
+ 
+}
+.categoryTwo{
+  width: 70%;
+}
+.modalInput2{
+  padding: 15px;
+  width: 100%;
+  border: none;
+  outline: none;
+  box-shadow: rgba(0, 0, 15, 0.1) 0px 3px 5px 0px;
+
+}
+/* .modalResourceDescription{
+  width: 100%;
+} */
+.modaltextarea{
+  width: 100%;
+  padding: 40px;
+  border: none;
+  outline: none;
+  box-shadow: rgba(0, 0, 15, 0.1) 0px 3px 5px 0px;
+
+}
+.sendbtn{
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border-radius:20px ;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
 }

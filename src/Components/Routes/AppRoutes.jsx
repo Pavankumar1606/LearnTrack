@@ -8,6 +8,7 @@ import Shared from "../Pages/Shared/Shared";
 import Community from "../Pages/Community/Community";
 import Profile from "../Pages/Profile/Profile";
 import AllDiscussions from "../Pages/Community/AllDiscussions";
+import AddResources from "../Pages/Resources/AddResources";
 
 const AppRoutes = () => {
   return (
@@ -21,6 +22,7 @@ const AppRoutes = () => {
         <Route path="community" element={<Community />} />
         <Route path="profile" element={<Profile />} />
         <Route path="AllDiscussions" element={<AllDiscussions />} />
+        <Route path="AddResources" element={<AddResources/>} />
       </Route>
     </Routes>
   );
